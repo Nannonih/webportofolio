@@ -1,0 +1,210 @@
+* body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-image: url(asset/background.jpg);
+    background-position: center ;
+}
+:root{
+    --primary:#374A63;
+    --secondary:#F3F8FF;
+    --tersier:#495B72;
+}
+.container{
+    background-color: #F3F8FF;
+    background-position: 100px 100px;
+    max-width:1870px;
+    max-height: 3740px ;
+    margin: 50px;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+/* kiri */
+.wrapper-kiri{
+    width:50%;
+    height: 3740px;
+    background-color:var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image img{
+    margin-top:100px ;
+    max-width: 600px;
+    max-height: 600px;
+    border-radius: 50%;
+    border: solid yellow 20px;
+}
+.title-desc{
+    height: 33%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-desc h2{
+    width: 500px;
+    height: 100px;
+    background-color: var(--secondary);
+    font-size: 60px;
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-desc p{
+    color: white;
+    font-size: 30px;
+}
+.title-desc li{
+    color: white;
+    font-size: 30px;
+}
+.title-desc .paragrap{
+    text-align: center  ;
+}
+/* kanan */
+.wrapper-kanan{
+    width:50%;
+    height: 3740px;
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name{
+    height: 800px;
+    width: 100%;
+    background-color: var(--tersier);
+}
+.name h1{
+    font-size: 100px;
+    text-align: center;
+    color: white;
+}
+.pengalaman{
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pengalaman-title h1{
+    width: 500px;
+    height: 100px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pengalaman-desc{
+    font-size: 30px;
+}
+.social-media{
+    width: 100%;
+    position:relative;
+    top: 1530px;
+    background-color: var(--tersier);
+    margin-left: -40px;
+    padding-left: 30px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.social-media-desc{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.social-media-desc img{
+    width: 100px;
+    height: 100px;
+} 
+.social-media-desc h4{
+font-size: 30px;
+} 
+
+/* responsive */
+/* meida max 1024 */
+@media only screen and (max-width:1024px){
+    .container{
+        margin:0;
+        max-width: 1024px;
+        max-height: 2048px;
+    }
+    .image img{
+        max-width: 400px;
+        max-height: 400px;
+    }
+    .name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name h1{
+        font-size: 50px;
+    }
+    .pengalaman{
+        margin-left: 10px;
+    }
+    .pengalaman-title h1{
+        width: 400px;
+        height: 100px;
+        background-color: var(--primary);
+        color: white;
+        font-size: 60px;
+        text-align: center;
+    }
+    .social-media{
+        width: 100%;
+        position:relative;
+        top: 1430px;
+        left: 14px;
+    }
+    .social-media-desc h4{
+        font-size: 20px;
+        } 
+}
+@media only screen and (max-width:768px){
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper-kiri{
+        width: 100%;
+    }
+    .wrapper-kanan{
+        width: 100%;
+    }
+    .wrapper-kanan .name{
+        display: none;
+    }
+}
+@media only screen and (max-width:425px){
+    .title-desc h2{
+        width: 100%;
+    }
+    .title-desc h2{
+        text-align: center;
+    }
+    .title-desc .ket{
+        font-size: 20px;
+    }
+    .social-media-desc h4{
+        font-size: 15px;
+    } 
+    .social-media-desc img{
+        width: 80px;
+        height: 80px;
+    } 
+}
+
